@@ -66,6 +66,9 @@ index-url = http://localhost:3141/root/pypi/+simple/
 index = http://localhost:3141/root/pypi/
 ```
 Having set this further usages of `pip` will automatically use the devpi server.
+If you are using a proxy make sure you have besides the environment variables 
+`http_proxy` and `https_proxy` also `no_proxy="127.0.0.1,localhost"` set because
+otherwise `pip` might hit the proxy instead of devpi.
 
 ### Web
 
